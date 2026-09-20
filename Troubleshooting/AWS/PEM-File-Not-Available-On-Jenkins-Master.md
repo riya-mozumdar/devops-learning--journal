@@ -25,11 +25,16 @@ The PEM file was available on my Windows laptop but was not available on Jenkins
 
 Copied the PEM file to Jenkins Master.
 
-open Windows PowerShell and run  - cd "C:\Users\A\Documents\riya" (go inside the folder)
+open Windows PowerShell and run  - 
+C:\Users\A\Documents\riya - get inside the folder where .pem is located
+scp -i .\jenkins-shot-1.pem .\jenkins-shot-1.pem ubuntu@<master pub-id>:/home/ubuntu/ 
 
 Set correct permission:
 
 chmod 400 /home/ec2-user/mykey.pem
+
+verify it
+ls -l /home/ec2-user/mykey.pem
 
 connected from Jenkins Master to Jenkins Slave
 
