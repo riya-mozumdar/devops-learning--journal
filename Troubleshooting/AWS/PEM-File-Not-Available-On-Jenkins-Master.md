@@ -31,14 +31,14 @@ scp -i .\jenkins-shot-1.pem .\jenkins-shot-1.pem ubuntu@<master pub-id>:/home/ub
 
 Set correct permission:
 
-chmod 400 /home/ec2-user/mykey.pem
+chmod 400 /home/ubuntu/mykey.pem
 
 verify it
-ls -l /home/ec2-user/mykey.pem
+ls -l /home/ubuntu/mykey.pem
 
 connected from Jenkins Master to Jenkins Slave
 
-ssh -i /home/ec2-user/mykey.pem ec2-user@<slave public ip address>
+ssh -i /home/ubuntu/mykey.pem ec2-user@<slave private ip address>
 
 ## Verification
 
