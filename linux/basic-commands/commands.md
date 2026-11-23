@@ -15,6 +15,12 @@ ls -l
 ## cd
 Change directory
 
+## cd ..
+move one directory up 
+
+## cd ~ 
+go to home directory
+
 Example:
 cd /home/riya
 
@@ -29,3 +35,18 @@ Create an empty file
 
 Example:
 touch file.txt
+
+##  clear
+clear terminal
+
+## whoami
+Display current user
+
+## history
+Display command history
+
+## df -h 
+Check disk space
+
+## free -h
+Check RAM usage 
